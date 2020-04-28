@@ -21,13 +21,13 @@ public class TesteEscrita {
 		// Fluxo de Saída de Arquivo
 		OutputStream fos = new FileOutputStream("teste.txt");
 		Writer osw = new OutputStreamWriter(fos);
-		BufferedWriter br = new BufferedWriter(osw);
+		BufferedWriter bw = new BufferedWriter(osw);
 		
-		br.write("OLA MUNDO TESTE OutputStreamWriter");
-		br.newLine();
-		br.newLine();
-		br.write("ehuehueehuehueehe");
+		bw.write("OLA MUNDO TESTE OutputStreamWriter");
+		bw.newLine();
+		bw.newLine();
+		bw.write("ehuehueehuehueehe");
 		
-		br.close();
+		bw.close();
 	}
 }
